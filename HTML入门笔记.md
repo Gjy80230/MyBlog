@@ -35,52 +35,54 @@ HTML 当然是[李爵士(Timothy John Berners-Lee)](https://zh.wikipedia.org/zh/
 我们来看下 body 标签里面有什么
 
 **标题 h1~h6**
-用于表示标题、副标题。
+> 用于表示标题、副标题。
 
 **章节 section**
-用于表示章节，也可以 section 中套 section。
+> 用于表示章节，也可以 section 中套 section。
 
 **段落 p**
-当需要输入文本内容的时候，这个标签就体现了它的作用，哪怕是一句话，也可以用 p 标签。
+> 当需要输入文本内容的时候，这个标签就体现了它的作用，哪怕是一句话，也可以用 p 标签。
 
 **文章 article**
-代表一个在文档、页面或者网站中自成一体的内容。一般一个article中会有header、footer以及主要内容。
+> 代表一个在文档、页面或者网站中自成一体的内容。一般一个article中会有header、footer以及主要内容。
 
 **头部 header**
-有时候需要加点广告之类的，可以用这个标签。
+> 有时候需要加点广告之类的，可以用这个标签。
 
 **脚部 footer**
-一般用于版权声明或者其他声明，像我们浏览的很多网站都是有声明的，就是用的这个标签。
+> 一般用于版权声明或者其他声明，像我们浏览的很多网站都是有声明的，就是用的这个标签。
+
 ![版权声明](./pictures/HTML入门笔记/banquan1.png)
 
 **主要内容 main**
-当我们的结构有头部、有尾部，我们可以把主要的内容标记出来。
+> 当我们的结构有头部、有尾部，我们可以把主要的内容标记出来。
 
 **旁支内容 aside**
-一般用于写导航，或者次要的内容。
+> 一般用于写导航，或者次要的内容。
 
 **划分 div**
-一般用于划分网页的结构。
+> 一般用于划分网页的结构。
 
 ### 全局属性有哪些
 
-**class**
+**类 class**
 
-- 给一个标签写一个类,一般的使用方法是先在标签中写一个 class，再给 class 一个名字，之后在 style 标签中
-- 引用它并给它相应的样式。
-  给 class 样式有两种写法，不过第一种写法当有 2 个以上 class 的时候，必须全部都写上去。而第二种只需要写其中一个就可以了
-  ![class的写法](./pictures/HTML入门笔记/class1.png)
-  ![class的引用](./pictures/HTML入门笔记/class2.png)
-  上图，两种写法都是可以的，不过推荐下面的写法，比较方便。
+- 给一个标签写一个类，一般的使用方法是先在标签中写一个 class，再给 class 一个名字，之后在 style 标签中引用它并给它相应的样式。
+  
+![class的写法](./pictures/HTML入门笔记/class1.png)
+- 给 class 样式有两种写法，不过第一种写法当有 2 个以上 class 的时候，必须全部都写上去。而第二种只需要写其中一个就可以了
+
+![class的引用](./pictures/HTML入门笔记/class2.png)
+
+上图，两种写法都是可以的，不过推荐第二种写法，比较方便。
 
 **contenteditable**
-可以在网页中编辑任何一个元素。
+> 可以在网页中编辑任何一个元素。
 
 **hidden**
-当你在某个元素写上这个属性，这个元素将会在网页中消失。
+> 当你在某个元素写上这个属性，这个元素将会在网页中消失。
 
 **id**
-
 - 不到万不得已，千万不要用。id 是用来表示全局唯一的标签，但是 id 的全局唯一性没有保障，就算有两个重复的 id，HTML 也不会提示我写错了。
 - 使用方法：
   1. css：一般给元素写上 id="xx"，在 style 标签中给它添加样式时用#xx{style}引用。
@@ -88,25 +90,26 @@ HTML 当然是[李爵士(Timothy John Berners-Lee)](https://zh.wikipedia.org/zh/
   3. 不要是已经存在的关键字。如 window 所有的属性
 
 **style**
-用于给网页添加样式的标签。
+> 用于给网页添加CSS样式的标签。有三种写法，以后再说。
 
 **tabindex**
-当元素有这个属性时，可以用 tab 键进行交互。
+> 当元素有这个属性时，可以用 tab 键进行交互。
 
 - tabindex=1；也就是正数，表示可以访问。
 - tabindex 可以是 0，表示最后才被 tab 访问。
 - tabindex 可以是负数，表示不可被 tab 访问。
 
 **title**
-当你省略了之后，title 属性放入完整的内容，就可以通过鼠标悬浮在省略的文字上显示出来。
+> 当你省略了之后，title 属性放入完整的内容，就可以通过鼠标悬浮在省略的文字上显示出来。
+
 ![text](./pictures/HTML入门笔记/text1.png)
 
 ### 常用的内容标签
 **ol+li（ordered list +list item）**
-有序列表，当你用这个列表时，它的每一项开头都会有一个数字，这个数字从1开始一次递增。
+> 有序列表，当你用这个列表时，它的每一项开头都会有一个数字，这个数字从1开始一次递增。
 
 **ul+li（unordered list +listitem）**
-无序列表。每一项的开头都是用“·”进行标记。
+> 无序列表。每一项的开头都是用“·”进行标记。
 当然有序列表和无序列表的样式都是可以通过css清除的。
 ```html
 <ol>
@@ -122,14 +125,11 @@ HTML 当然是[李爵士(Timothy John Berners-Lee)](https://zh.wikipedia.org/zh/
 </ul>
 ```
 效果如下：
-![094701a1a6d4d8cded6d0f53ce4b6143.png](en-resource://database/8525:0)
 
-**dl+dt+dd（description list +term 概念+ data 数据）**
-description     形容、描述
-term 概念
-data 数据
+![list](./pictures/HTML入门笔记/text1.png)
 
-描述列表，用于描述一些事物
+**dl+dt+dd（description list +term + data）**
+> 描述列表，用于描述一些事物
 ```html
 <dl>
         <dt>GROUP A</dt>
@@ -147,10 +147,11 @@ data 数据
 </dl>
 ```
 效果如下：
-![d3a1e7d2894c19edb8138e61f0ca83f6.png](en-resource://database/8527:0)
+
+![dl](./pictures/HTML入门笔记/dl1.png)
 
 **pre（preview的缩写）**
-能让你的代码按照你想要的样子呈现，如保留空格、缩进、回车
+> 能让你的代码按照你想要的样子呈现，如保留空格、缩进、回车
 ```html
 <pre>
 <h3>用最真诚的方式，
@@ -161,42 +162,45 @@ data 数据
 </pre>
 ```
 效果如下：
-![378c7d3e5263c8ba3953b8d2498d5dc0.png](en-resource://database/8531:1)
+
+![pre](./pictures/HTML入门笔记/pre1.png)
 
 **hr**
-一条分隔线。
+> 一条分隔线。
 
 **br（break的缩写）**
-添加一个回车。
+> 添加一个回车。
 
 **a（anchor的缩写）**
-锚点，用于跳转网页。
+> 锚点，用于跳转网页。
 ```html
 <a href="http://zhihu.com">编乎</a>
 ```
 
 **em（emphasis的缩写）**
-表示强调
+> 表示强调
 ```html
 我们的重点是<em> JavaScript </em>
 ```
 效果如下：
-![619507b295a9bf536150de6f856e873e.png](en-resource://database/8533:0)
+
+![em](./pictures/HTML入门笔记/em1.png)
 
 **strong**
-加粗
+> 加粗文字
 ```html
 我们的<strong>重点</strong>是<em> JavaScript </em>
 ```
 效果如下：
-![4fc9436131dbaed7fbabf4d744302db6.png](en-resource://database/8535:0)
+
+![strong](./pictures/HTML入门笔记/strong1.png)
 
 **code**
-把代码包起来，以代码的形式呈现。
+> 把代码包起来，以代码的形式呈现。
 但是不会换行，可以用per包裹来达到换行的效果。
 
 **q（quote的缩写）**
-引用文字，被包裹的文字不会换行。
+> 引用文字，被包裹的文字不会换行。
 
 **blockquote**
-引用文字，被包裹的文字会换行。
+> 引用文字，被包裹的文字会换行。
