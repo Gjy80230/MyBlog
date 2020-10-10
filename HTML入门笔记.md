@@ -70,7 +70,7 @@ HTML 当然是[李爵士(Timothy John Berners-Lee)](https://zh.wikipedia.org/zh/
 - 给一个标签写一个类，一般的使用方法是先在标签中写一个 class，再给 class 一个名字，之后在 style 标签中引用它并给它相应的样式。
   
 ![class的写法](./pictures/HTML入门笔记/class1.png)
-- 给 class 样式有两种写法，不过第一种写法当有 2 个以上 class 的时候，必须全部都写上去。而第二种只需要写其中一个就可以了
+- 给 class 样式有两种写法，不过第一种写法当有 2 个以上 class 的时候，必须全部都写上去。而第二种只需要写其中一个就可以了。
 
 ![class的引用](./pictures/HTML入门笔记/class2.png)
 
@@ -87,15 +87,15 @@ HTML 当然是[李爵士(Timothy John Berners-Lee)](https://zh.wikipedia.org/zh/
 - 使用方法：
   1. css：一般给元素写上 id="xx"，在 style 标签中给它添加样式时用#xx{style}引用。
   2. js：用于获取 id。
-  3. 不要是已经存在的关键字。如 window 所有的属性
+  3. 不要是已经存在的关键字。如 window 所有的属性。
 
 **style**
 > 用于给网页添加CSS样式的标签。有三种写法，以后再说。
 
 **tabindex**
-> 当元素有这个属性时，可以用 tab 键进行交互。
+> 当元素有这个属性时，可以用tab 键进行交互。
 
-- tabindex=1；也就是正数，表示可以访问。
+- tabindex=1；也就是正数，表示可以被tab 访问。
 - tabindex 可以是 0，表示最后才被 tab 访问。
 - tabindex 可以是负数，表示不可被 tab 访问。
 
@@ -126,10 +126,10 @@ HTML 当然是[李爵士(Timothy John Berners-Lee)](https://zh.wikipedia.org/zh/
 ```
 效果如下：
 
-![list](./pictures/HTML入门笔记/text1.png)
+![list](./pictures/HTML入门笔记/list1.png)
 
 **dl+dt+dd（description list +term + data）**
-> 描述列表，用于描述一些事物
+> 描述列表，用于描述一些事物。
 ```html
 <dl>
         <dt>GROUP A</dt>
@@ -151,7 +151,7 @@ HTML 当然是[李爵士(Timothy John Berners-Lee)](https://zh.wikipedia.org/zh/
 ![dl](./pictures/HTML入门笔记/dl1.png)
 
 **pre（preview的缩写）**
-> 能让你的代码按照你想要的样子呈现，如保留空格、缩进、回车
+> 能让你的代码按照你想要的样子呈现，如保留空格、缩进、回车。
 ```html
 <pre>
 <h3>用最真诚的方式，
@@ -178,7 +178,7 @@ HTML 当然是[李爵士(Timothy John Berners-Lee)](https://zh.wikipedia.org/zh/
 ```
 
 **em（emphasis的缩写）**
-> 表示强调
+> 表示强调。
 ```html
 我们的重点是<em> JavaScript </em>
 ```
@@ -187,7 +187,7 @@ HTML 当然是[李爵士(Timothy John Berners-Lee)](https://zh.wikipedia.org/zh/
 ![em](./pictures/HTML入门笔记/em1.png)
 
 **strong**
-> 加粗文字
+> 加粗文字。
 ```html
 我们的<strong>重点</strong>是<em> JavaScript </em>
 ```
@@ -196,7 +196,7 @@ HTML 当然是[李爵士(Timothy John Berners-Lee)](https://zh.wikipedia.org/zh/
 ![strong](./pictures/HTML入门笔记/strong1.png)
 
 **code**
-> 把代码包起来，以代码的形式呈现。
+> 把代码包起来，以代码的形式呈现；
 但是不会换行，可以用per包裹来达到换行的效果。
 
 **q（quote的缩写）**
