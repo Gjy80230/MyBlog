@@ -33,14 +33,18 @@ HTML 当然是[李爵士(Timothy John Berners-Lee)](https://zh.wikipedia.org/zh/
 ### 常用表示的章节标签
 
 我们来看下 body 标签里面有什么
+
 **标题 h1~h6**
 用于表示标题、副标题。
+
 **章节 section**
 用于表示章节，也可以 section 中套 section。
-**文章 article**
 
 **段落 p**
 当需要输入文本内容的时候，这个标签就体现了它的作用，哪怕是一句话，也可以用 p 标签。
+
+**文章 article**
+代表一个在文档、页面或者网站中自成一体的内容。一般一个article中会有header、footer以及主要内容。
 
 **头部 header**
 有时候需要加点广告之类的，可以用这个标签。
@@ -51,8 +55,10 @@ HTML 当然是[李爵士(Timothy John Berners-Lee)](https://zh.wikipedia.org/zh/
 
 **主要内容 main**
 当我们的结构有头部、有尾部，我们可以把主要的内容标记出来。
+
 **旁支内容 aside**
 一般用于写导航，或者次要的内容。
+
 **划分 div**
 一般用于划分网页的结构。
 
@@ -96,3 +102,101 @@ HTML 当然是[李爵士(Timothy John Berners-Lee)](https://zh.wikipedia.org/zh/
 ![text](./pictures/HTML入门笔记/text1.png)
 
 ### 常用的内容标签
+**ol+li（ordered list +list item）**
+有序列表，当你用这个列表时，它的每一项开头都会有一个数字，这个数字从1开始一次递增。
+
+**ul+li（unordered list +listitem）**
+无序列表。每一项的开头都是用“·”进行标记。
+当然有序列表和无序列表的样式都是可以通过css清除的。
+```html
+<ol>
+       <li>前端</li>
+       <li>中间件</li>
+       <li>后端</li>
+</ol>
+
+<ul>
+       <li>前端</li>
+       <li>中间件</li>
+       <li>后端</li>
+</ul>
+```
+效果如下：
+![094701a1a6d4d8cded6d0f53ce4b6143.png](en-resource://database/8525:0)
+
+**dl+dt+dd（description list +term 概念+ data 数据）**
+description     形容、描述
+term 概念
+data 数据
+
+描述列表，用于描述一些事物
+```html
+<dl>
+        <dt>GROUP A</dt>
+        <dd>G2 ESPORTS</dd>
+        <dd>SUNING</dd>
+        <dd>MACHI ESPORTS</dd>
+        <dd>ETAM LIQUID</dd>
+</dl>
+<dl>
+        <dt>GROUP B</dt>
+        <dd>DAMWON GAMING</dd>
+        <dd>JD GAMING</dd>
+        <dd>ROGUE</dd>
+        <dd>PSG TALON</dd>
+</dl>
+```
+效果如下：
+![d3a1e7d2894c19edb8138e61f0ca83f6.png](en-resource://database/8527:0)
+
+**pre（preview的缩写）**
+能让你的代码按照你想要的样子呈现，如保留空格、缩进、回车
+```html
+<pre>
+<h3>用最真诚的方式，
+谱写东方的超级英雄史诗。</h3>
+<p>我们的野心，不只是去重新塑造一个个大主角。而是用顶尖的感面，丰等的细节，沉浸的战斗体验，足量的剧情演
+绎，去还原我们心中一直存在的那个来方魔幻世界——
+她是如此辽阔、狂野、浪漫、充满想象力与神秘感，又无此真实可信。</p>
+</pre>
+```
+效果如下：
+![378c7d3e5263c8ba3953b8d2498d5dc0.png](en-resource://database/8531:1)
+
+**hr**
+一条分隔线。
+
+**br（break的缩写）**
+添加一个回车。
+
+**a（anchor的缩写）**
+锚点，用于跳转网页。
+```html
+<a href="http://zhihu.com">编乎</a>
+```
+
+**em（emphasis的缩写）**
+表示强调
+```html
+我们的重点是<em> JavaScript </em>
+```
+效果如下：
+![619507b295a9bf536150de6f856e873e.png](en-resource://database/8533:0)
+
+**strong**
+加粗
+```html
+我们的<strong>重点</strong>是<em> JavaScript </em>
+```
+效果如下：
+![4fc9436131dbaed7fbabf4d744302db6.png](en-resource://database/8535:0)
+
+**code**
+把代码包起来，以代码的形式呈现。
+但是不会换行，可以用per包裹来达到换行的效果。
+
+**q（quote的缩写）**
+引用文字，被包裹的文字不会换行。
+
+**blockquote**
+引用文字，被包裹的文字会换行。
