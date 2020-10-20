@@ -243,7 +243,7 @@ table {
         border: 1px solid burlywood;
       }
 ```
-效果：
+效果：  
 ![spacing](./pictures/HTML常用标签/spacing1.png)
 
 **border-collapse**
@@ -263,7 +263,7 @@ table {
 ```
 上面的border-spacing可以不写或者为0px；
 
-效果：
+效果：  
 ![collapse](./pictures/HTML常用标签/collapse1.png)
 
 ### 总结
