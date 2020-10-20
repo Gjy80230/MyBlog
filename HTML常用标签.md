@@ -38,6 +38,8 @@
 
 但是你如果用ftp协议去打开第一种写法的d.html，那么就是这样的：
 ![ftp](./pictures/HTML常用标签/ftp1.png)
+
+
 同时它的链接是这样的：
 ![ftp](./pictures/HTML常用标签/ftp2.png)
 
@@ -239,7 +241,7 @@ table {
       }
 ```
 效果：
-![spacing](/pictures/HTML常用标签/spacing1.png)
+![spacing](./pictures/HTML常用标签/spacing1.png)
 
 **border-collapse**
 > 用来决定表格的边框是分开还是合并的。
