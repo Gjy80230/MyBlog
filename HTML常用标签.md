@@ -33,14 +33,14 @@
 
 <a href="a/s/f.html">f.html</a>     //相对路径打开
 ```
-我们把http服务的链接复制到空白的地方，可以看到：
+我们把http服务的链接复制到空白的地方，可以看到：  
 ![http](./pictures/HTML常用标签/http1.png)
 
-但是你如果用ftp协议去打开第一种写法的d.html，那么就是这样的：
+但是你如果用ftp协议去打开第一种写法的d.html，那么就是这样的：  
 ![ftp](./pictures/HTML常用标签/ftp1.png)
 
 
-同时它的链接是这样的：
+同时它的链接是这样的：  
 ![ftp](./pictures/HTML常用标签/ftp2.png)
 
 不过用ftp协议打开相对路径的页面，则是正常的。
@@ -120,8 +120,8 @@ pic.onerror = function () {
 
 ```css
 img {
-        max-width: 100%;
-      }
+    max-width: 100%;
+}
 ```
 
 ### table标签
@@ -165,8 +165,9 @@ img {
       </tfoot>
     </table>
 ```
-效果：
-![table](./pictures/HTML常用标签/table1.png)
+效果：  
+![table](./pictures/HTML常用标签/table1.png)  
+
 2. 两行表头
 ```html
 <table>
@@ -208,11 +209,9 @@ img {
       </tfoot>
     </table>
 ```
-效果：
-
+效果：  
 ![table](./pictures/HTML常用标签/table2.png)
-
-
+  
 3. 浏览器纠错
 - 当你忘记写了thead、tbody、tfoot标签，写好的tr会变成tbody里面的内容，如果只写了td，浏览器会帮你加上tr，渲染在页面上也会是完整的表格。
 
