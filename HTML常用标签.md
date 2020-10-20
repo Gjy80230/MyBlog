@@ -239,7 +239,7 @@ table {
       }
 ```
 效果：
-![spacing](./pictures/HTML常用标签/spacing1.png)
+![spacing](/pictures/HTML常用标签/spacing1.png)
 
 **border-collapse**
 > 用来决定表格的边框是分开还是合并的。
