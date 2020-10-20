@@ -209,12 +209,16 @@ img {
     </table>
 ```
 效果：
+
 ![table](./pictures/HTML常用标签/table2.png)
+
+
 3. 浏览器纠错
 - 当你忘记写了thead、tbody、tfoot标签，写好的tr会变成tbody里面的内容，如果只写了td，浏览器会帮你加上tr，渲染在页面上也会是完整的表格。
 
 4. thead、tbody、tfoot的顺序
 - 它们的顺序是按照thead、tbody、tfoot来排列的，无论你把它们怎么颠倒，依然是这个顺序。
+
 
 #### 相关样式
 **table-layout**
