@@ -12,10 +12,10 @@ let div = $('.test')
 ```
 除了上面的获取方式，还有以下获取方式。
 ```javascript
-$("*")						//选择所有元素.
-$("#myDiv")				//选择ID为myDiv的元素.
-$('div:first')		//选择第一个div元素.
-$(":button")			//选择所有按钮元素和类型为按钮的元素.
+$("*")  //选择所有元素.
+$("#myDiv") //选择ID为myDiv的元素.
+$('div:first')  //选择第一个div元素.
+$(":button")  //选择所有按钮元素和类型为按钮的元素.
 ```
 <a name="xjvYK"></a>
 ### jQuery 的链式操作是怎样的
@@ -25,10 +25,10 @@ $('.test').find('li').eq(2).title('jQuery')
 ```
 我们来分解下。
 ```javascript
-$('.test')					//选择class为test的元素.
-  .find('li')				//找到里面的li元素.
-  .eq(2)						//选择第3个li元素.
-  .text('jQuery')		//把它的文本内容改为jQuery.
+$('.test')  //选择class为test的元素.
+  .find('li') //找到里面的li元素.
+  .eq(2)  //选择第3个li元素.
+  .text('jQuery') //把它的文本内容改为jQuery.
 ```
 这是jQuery最令人惊艳的一个特点，它获取到元素之后的每一步操作，返回的都是一个jQuery对象，而且这些操作还能连在一起。<br />
 <br />除此之外，jQuery还提供了`end()`方法，可以让返回的jQuery对象后退一步。
@@ -37,9 +37,9 @@ $('.test')
   .find('li')
   .eq(2)
   .text('jQuery')
-  .end()						//退回到选中所有li元素的那一步.
-  .eq(1)						//选中第二个li元素.
-  .text('hello')		//把它的文本内容改为hello.
+  .end()  //退回到选中所有li元素的那一步.
+  .eq(1)  //选中第二个li元素.
+  .text('hello')  //把它的文本内容改为hello.
 ```
 <a name="gjHQg"></a>
 ### jQuery 如何创建元素
@@ -71,10 +71,10 @@ $('p').insertBefore($('div'))
 <a name="qYewY"></a>
 ### jQuery 如何修改元素的属性
 ```javascript
-$("p").addClass("myClass");				 //给p元素添加class值为myClass
-$('li').attr('title', '列表项');		//把li元素的title值改为"列表项"
-$("div").text('这是一段文字')			 //把div的text值改为"这是一段文字"
-$('input').val('默认文字')				 //把文本框的值改为传入的参数值
+$("p").addClass("myClass"); //给p元素添加class值为myClass
+$('li').attr('title', '列表项');  //把li元素的title值改为"列表项"
+$("div").text('这是一段文字') //把div的text值改为"这是一段文字"
+$('input').val('默认文字')  //把文本框的值改为传入的参数值
 
 ```
 <a name="xiY4b"></a>
