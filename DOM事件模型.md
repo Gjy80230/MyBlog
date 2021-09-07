@@ -61,7 +61,7 @@ let ul = document.querySelector('ul')
 ul.addEventListener('click', (e)=>{
 	let t = e.target
   if(t.tagName.toLowerCase() === 'li'){
-  		console.log(t.textContent + '被点击了')
+    console.log(t.textContent + '被点击了')
   }
 })
 ```
